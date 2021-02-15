@@ -1,5 +1,5 @@
 ---
-title: "Flex for fantasy"
+title: "Flex For Fantasy"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
