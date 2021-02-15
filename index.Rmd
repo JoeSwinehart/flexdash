@@ -8,18 +8,25 @@ output:
 
 ```{r setup, include=FALSE}
 library(flexdashboard)
+library(here)
+library(tidyverse)
+library(dplyr)
 ```
 
-Column {data-width=650}
+Column {data-width=550}
 -----------------------------------------------------------------------
 
 ### Chart A
 
 ```{r}
+p <- mtcars %>% 
+  ggplot (aes(wt, mpg)) +
+  geom_point()
 
+plotly::ggplotly()
 ```
 
-Column {data-width=350}
+Column {data-width=450}
 -----------------------------------------------------------------------
 
 ### Chart B
